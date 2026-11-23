@@ -1,0 +1,7 @@
+- id: leakscan
+  name: leakscan (publication leaks)
+  description: Flag local paths, identities, emails, hostnames, AI fingerprints and secret shapes.
+  entry: leakscan
+  language: python
+  pass_filenames: true
+  types: [text]

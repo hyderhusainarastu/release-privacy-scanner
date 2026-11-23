@@ -1,0 +1,4 @@
+# <path glob> | <regex matched against the line> | <reason>
+# Entries must be narrow. A bare word, a catch-all regex or a '*' glob is rejected.
+docs/*.md | /(?:home|Users)/<name>/ | placeholder path shown in a how-to
+tests/fixtures/*.txt | build-box\.lan | hostname is part of a test fixture

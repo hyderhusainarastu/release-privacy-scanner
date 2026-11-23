@@ -1,0 +1,7 @@
+# Owner-specific regexes. Keep this file OUTSIDE the repository, or name it
+# .leakscan.local.txt and make sure it is git-ignored. One case-insensitive regex per line.
+# Hits are reported as "private-pattern #N" with the matched text redacted.
+# Everything below is fictional.
+\bzorblax\b
+\bwhitlock-?ferris\b
+project[ _-]?nightjar

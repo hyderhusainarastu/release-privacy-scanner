@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "release-privacy-scanner"
+version = "0.1.0"
+description = "Scan a repo, its git history and release archives for publication leaks before a public push or anonymous submission."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "hyderhusainarastu" }]
+keywords = ["privacy", "anonymization", "double-blind-review", "pre-commit", "release"]
+
+[project.scripts]
+leakscan = "release_privacy_scanner.cli:main"
+
+[tool.setuptools]
+packages = ["release_privacy_scanner"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
